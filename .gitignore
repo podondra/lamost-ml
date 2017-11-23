@@ -1,4 +1,6 @@
 data/ondrejov-dataset.csv
+data/img/
+data/observation.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
