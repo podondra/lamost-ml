@@ -1,4 +1,4 @@
-# LAMOST Spectra ML
+# LAMOST Spectra Machine Learning
 
 Machine Learning in LAMOST survey.
 
