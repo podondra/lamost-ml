@@ -2,6 +2,7 @@ data/ondrejov-dataset.csv
 data/img/
 data/observation.csv
 data/lamost-dr1.hdf5
+normalized-vs-raw/data/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
