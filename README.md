@@ -13,3 +13,5 @@ The dataset should be stored as `data/ondrejov-dataset.csv`.
 ## Docker Container Information
 
 `/lamost` is on antares server `/data/public/LAMOST-DR1/fits`.
+
+`docker exec CONTAINER jupyter notebook list`
