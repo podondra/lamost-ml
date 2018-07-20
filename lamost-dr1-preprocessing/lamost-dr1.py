@@ -8,7 +8,7 @@ files = glob.glob('/lamost/**/*.fits')
 size = len(files)
 new_wave = numpy.linspace(6519, 6732, 140)
 
-with h5py.File('/notebooks/data/lamost-dr1.hdf5') as hdf5:
+with h5py.File('/notebooks/lamost-dr1-preprocessing/lamost-dr1.hdf5') as hdf5:
     try:
         X = hdf5.create_dataset('X', (size, 140), dtype=numpy.float64)
         # create variable-len unicode datatype
