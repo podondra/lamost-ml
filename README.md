@@ -17,7 +17,11 @@ To run docker container:
 	nvidia-docker run -d -p 8888:8888 \	# have the jupyter notebook on localhost:8888
 		-v $PATH_TO_NOTEBOOKS:/notebooks \	# e.g. /data/podondra/lamost-ml
 		-v $PATH_TO_LAMOST_DATA:/lamost:ro \	# e.g. /data/public/LAMOST-DR1/fits
-		--name podondruv tensorflow/tensorflow:latest-gpu-py3
+		--name $CONTAINER_NAME \
+		tensorflow/tensorflow:latest-gpu-py3	# image you would like to use
+
+It is needed to use `nvidia-docker` command else the container will not be
+able to use CUDA libraries.
 
 To find URL of the Docker container with secret token:
 
