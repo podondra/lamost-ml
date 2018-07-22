@@ -4,12 +4,24 @@ Machine Learning in LAMOST survey.
 
 ## Projects
 
-1. **candidates**, command line utility for working with candidates
-2. **china-xmatch**, cross-matching of some our candidates with result from
-	chinese colleague
-3. **lamost-dr1-preprocessing**, script for LAMOST DR1 preprocessing
-4. **normalized-vs-raw**, experiment which shows that neural network manages
-	both raw and normalized spectra
+Short description of projects in this repository.
+
+### Candidates
+
+Command line utility for working with candidates.
+
+### China Cross-matching
+
+Cross-matching of some our candidates with result from chinese colleagues.
+
+### LAMOST DR1 Preprocessing
+
+Script for LAMOST DR1 preprocessing.
+
+### Normalized vs Raw
+
+Experiment which shows that neural network manages both raw and normalized
+spectra.
 
 ## Ondrejov Dataset
 
