@@ -23,6 +23,11 @@ Script for LAMOST DR1 preprocessing.
 Experiment which shows that neural network manages both raw and normalized
 spectra.
 
+### Iterative CNN
+
+Code for the paper concerning discovery of emission-line stars in LASMOST
+survey.
+
 ## Ondrejov Dataset
 
 This work makes use of
