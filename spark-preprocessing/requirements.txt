@@ -1,0 +1,12 @@
+astropy==2.0.7
+atomicwrites==1.1.5
+attrs==18.1.0
+more-itertools==4.2.0
+numpy==1.14.5
+pluggy==0.6.0
+py==1.5.4
+py4j==0.10.7
+pyspark==2.3.1
+pytest==3.6.2
+six==1.11.0
+-e git+git@github.com:podondra/spectraml.git@a6b05171599470cc806441fc8f0e7ec38115b076#egg=spectraml
