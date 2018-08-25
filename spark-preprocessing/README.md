@@ -3,7 +3,20 @@
 Script with code to run parallel preprocessing of LAMOST spectra.
 Uses [spectraml](https://github.com/podondra/spectraml).
 
-## Notes
+## Docker
+
+First build the image using:
+
+	$ docker build -t spark-preprocessing
+
+Then run `bash` inside the container so the CLI can be used:
+
+	$ docker run -i -t -v /path/to/data:/home/jovyan/data:ro \
+		spark-preprocessing bash
+
+Do not forget to mount in the data in *read-only* mode.
+
+## Spark Environment
 
 Set up environment if using Spark 2.3.1 installed in virtual environment:
 
