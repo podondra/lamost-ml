@@ -35,27 +35,19 @@ survey.
 ## Ondrejov Dataset
 
 This work makes use of
-[Ondrejov Dataset](https://github.com/podondra/ondrejov-dataset)
-which is going to be available soon online on [Zenodo](https://zenodo.org/).
+[Ondrejov Dataset](https://github.com/podondra/ondrejov-dataset).
 
-## Docker Container Information
+## Docker Information
 
-To run docker container:
+Nice paper about reproducible research with Docker:
+https://arxiv.org/abs/1410.0846.
 
-	$ nvidia-docker run -d -p 8888:8888 \	# notebook on localhost:8888
-		-v $PATH_TO_NOTEBOOKS:/notebooks \
-		-v $PATH_TO_LAMOST_DATA:/lamost:ro \
-		--name $CONTAINER_NAME \
-		tensorflow/tensorflow:latest-gpu-py3
-
-It is needed to use `nvidia-docker` command else the container will not be
-able to use CUDA libraries.
+If it is needed to use GPU for computations use `nvidia-docker` command
+instead of `docker` else the container will not be able to use CUDA libraries.
 
 To find URL of the Docker container with secret token:
 
 	docker exec CONTAINER jupyter notebook list
 
-## TODO list
-
-- Have a one big container is not reasonable as different project may depend
-	on different versions.
+Helpful tutorial can be found at
+[Docker documentation](https://docs.docker.com/get-started/part2/).
