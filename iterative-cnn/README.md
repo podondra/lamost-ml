@@ -1,6 +1,15 @@
 # Iterative CNN
 
-All information concerning the project are in the Jupyter notebook.
+TODO write project summary.
+
+## TODO List
+
+1. implement `itercnn` module
+1. put only result exploration and explanation into a Jupyter notebook
+1. describe how to get data
+1. write project summary into README
+
+## Docker
 
 To run the Docker container use:
 
