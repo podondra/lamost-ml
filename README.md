@@ -50,4 +50,8 @@ To find URL of the Docker container with secret token:
 	docker exec CONTAINER jupyter notebook list
 
 Helpful tutorial can be found at
-[Docker documentation](https://docs.docker.com/get-started/part2/).
+[Docker documentation](https://docs.docker.com/get-started/part2/)
+and
+[Best practices for writing Dockerfiles](
+https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+).
