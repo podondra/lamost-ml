@@ -2,21 +2,10 @@ import numpy as np
 import pandas as pd
 
 
-def remove_duplicities(data, column):
-    """Remove rows from data which has same values in a column.
-    
-    Keep the first entry and remove all others from data.
-
-    data is a pandas.DataFrame and
-    column is the column whete to look for duplicities.
-    """
-    return data[~data[column].duplicated()]
-
-
 def read_candidates(filename):
     """Read CSV file with candidates and return it as a pandas.DataFrame."""
-    candidates = remove_duplicities(pd.read_csv(filename), 'designation')
     # remove 'LAMOST ' from designation
+    candidates = pd.read_csv(filename)
     candidates['designation'] =  candidates['designation'].map(
             lambda x: x.split()[-1]
             )
@@ -49,4 +38,4 @@ def read_hou_catalogue(filename):
     """Read Hou's catalogue:
     http://paperdata.china-vo.org/vac/dr2/HouEmission2016.tar.gz.
     """
-    return remove_duplicities(pd.read_csv(filename, sep='\t'), '#designation')
+    return pd.read_csv(filename, sep='\t')

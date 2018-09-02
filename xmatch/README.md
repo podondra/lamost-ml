@@ -12,7 +12,7 @@ To run this code in a Docker container use:
         -e JUPYTER_LAB_ENABLE=yes \
         -v "$PWD":/home/jovyan \
         --name $CONTAINER_NAME \
-        jupyter/scipy-notebook:8ccdfc1da8d5
+	podondra/xmatch
 
 It uses the [jupyter/scipy-notebook](
 	https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-scipy-notebook
