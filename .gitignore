@@ -1,8 +1,13 @@
+# Bash
+.bash_history
+
 # VIM
 *~
 
-# Data
+# Data and files
 data/
+old/
+figures/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -74,7 +79,10 @@ docs/_build/
 target/
 
 # Jupyter Notebook
-.ipynb_checkpoints
+.ipynb_checkpoints/
+.ipython/
+.jupyter/
+.local/
 
 # pyenv
 .python-version
