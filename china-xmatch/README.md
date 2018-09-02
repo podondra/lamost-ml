@@ -1,11 +1,19 @@
 # China Xmatching
 
-This xmatching refers to these papers and catalogues:
+See the notebook for info about this project.
 
-- Searching for classical Be stars in LAMOST DR1
-    - http://adsabs.harvard.edu/abs/2015RAA....15.1325L
-    - http://dr1.lamost.org/doc/vac (Classical B-type emission-line (CBe) stars)
-- A catalogue of early-type emission-line stars and H-alpha line profiles
-  from LAMOST DR2
-    - http://adsabs.harvard.edu/abs/2016RAA....16..138H
-    - http://dr2.lamost.org/doc/vac (Early-type emission-line stars)
+## Docker
+
+To run this code in a Docker container use:
+
+    $ docker run \
+        --user $(id -u) --group-add users \
+        -p $PORT_OUT:8888 \
+        -e JUPYTER_LAB_ENABLE=yes \
+        -v "$PWD":/home/jovyan \
+        --name $CONTAINER_NAME \
+        jupyter/scipy-notebook:8ccdfc1da8d5
+
+It uses the [jupyter/scipy-notebook](
+	https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-scipy-notebook
+). Make sure to be in lamost-ml/china-xmatch so that $PWD is set correctly.
