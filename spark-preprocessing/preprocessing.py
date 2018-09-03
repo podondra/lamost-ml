@@ -20,3 +20,5 @@ sc.parallelize(gen_files_with_ext(path, '.fits')) \
         .map(lambda s: (s[0], preprocess_spectrum(s[1], s[2])[1])) \
         .map(lambda s: s[0] + ',' + ','.join(map(str, s[1]))) \
         .saveAsTextFile('data')
+
+# TODO allow result concatenation to CSV and HDF5

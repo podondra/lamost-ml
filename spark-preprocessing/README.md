@@ -5,6 +5,8 @@ Uses [spectraml](https://github.com/podondra/spectraml).
 
 ## Docker
 
+TODO Docker in this setting does not work.
+
 First build the image using:
 
 	$ docker build -t spark-preprocessing
