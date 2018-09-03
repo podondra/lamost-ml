@@ -6,3 +6,5 @@
    into [spectraml](https://github.com/podondra/spectraml/) project
 1. reimplement the iterative CNN code for the purpose of paper publishing
 1. make a t-SNE vizualization for paper publication purpose
+1. try unsupervised pretraining explainde in chapter 15 of the
+   [Deep Learning](http://www.deeplearningbook.org/) book.
