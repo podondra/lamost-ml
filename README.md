@@ -14,14 +14,6 @@ Command line utility for working with candidates.
 
 Cross-matching of some our candidates with result from chinese colleagues.
 
-### Spark LAMOST Preprocessing
-
-Preprocessing project for LAMOST spectra which uses Spark for parallelism.
-
-### LAMOST DR1 Preprocessing
-
-Script for LAMOST DR1 preprocessing.
-
 ### Normalized vs Raw
 
 Experiment which shows that neural network manages both raw and normalized
