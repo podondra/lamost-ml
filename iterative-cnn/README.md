@@ -30,6 +30,7 @@ To run the Docker container use:
 	$ nvidia-docker run \
 		-it \
 		-v /path/to/iterative-cnn:/notebooks \
+		-v /path/to/lamost/data:/lamost:ro \
 		-p $TENSORBOARD_PORT:6006 \
 		-p $JUPYTER_PORT:8888 \
 		--name $CONTAINER_NAME \
