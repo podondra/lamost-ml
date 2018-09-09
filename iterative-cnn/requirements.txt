@@ -2,4 +2,4 @@ h5py==2.8.0
 imbalanced-learn==0.3.3
 jupyterlab==0.34.3
 pandas==0.23.4
-git+https://github.com/podondra/spectraml.git@e3bdbd75ad13c2b22848a2a6433b0a32dd8af649#egg=spectraml
+git+https://github.com/podondra/spectraml.git@18e084cdccbf958eba69cbbb9c44cff82f0b793b#egg=spectraml
